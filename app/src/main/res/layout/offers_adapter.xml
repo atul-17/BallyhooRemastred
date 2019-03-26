@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_2sdp"
+    app:cardElevation="@dimen/_5sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_offer_image"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+           android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/food_2"
+            app:riv_corner_radius="@dimen/_2sdp" />
+
+        <FrameLayout
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:visibility="visible"
+            android:id="@+id/frame_layout_event_day"
+            android:background="@drawable/banner">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:text="Monday"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7ssp"
+                android:textStyle="italic" />
+
+
+        </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_75sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Offer Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:id="@+id/tv_offer_name"
+                />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Mon-Fri 10:00 Am - 5:00 PM"
+            android:layout_below="@+id/tv_offer_name"
+            android:textColor="@color/ligher_black"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/tv_offer_date"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_below="@+id/tv_offer_date"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:id="@+id/tv_offer_description"
+            android:text="Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife. By Cubbon Park, Vidhana Soudha is a Neo-Dravidian legislative building"
+            android:textColor="@color/ligher_black"
+            android:textSize="@dimen/_10ssp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Read More"
+            android:layout_below="@+id/tv_offer_description"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_10ssp"
+            android:id="@+id/tv_read"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@+id/tv_read"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@color/light_grey"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:text="₹2000 "
+        android:layout_below="@+id/tv_offer_name"
+        android:textColor="@color/ligher_black"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+    <Button
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_gravity="bottom|right"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:text="Book"
+        android:layout_marginBottom="@dimen/_15sdp"
+        />
+</android.support.v7.widget.CardView>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    android:layout_height="@dimen/_60sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <kr.pe.burt.android.lib.androidgradientimageview.AndroidGradientImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food_2"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_collection_pic"
+            app:giv_x="0.0"
+            app:giv_y="0.0"
+            app:giv_rotate="60.0"
+            app:giv_startColor="#26000000"
+            app:giv_startOffset="0.3"
+            app:giv_middleColor="#26000000"
+            app:giv_middleOffset="0.8"
+            app:giv_endColor="#26000000"
+            app:giv_endOffset="0.8"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            android:text="Pubs"
+            android:fontFamily="@font/quicksand_regular"
+            android:gravity="center"
+            android:id="@+id/tv_collections_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_collections_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:text="Popular choices"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/ligher_black"
+        android:textSize="@dimen/_18ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:background="@color/light_grey"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_collections"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

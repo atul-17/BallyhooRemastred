@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: kr.pe.burt.android.lib:androidgradientimageview-0.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidgradientimageview-0.0.2.aar/069a6896ee42df37635fa69115dfbd36/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/androidgradientimageview-0.0.2.aar/069a6896ee42df37635fa69115dfbd36/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/kr.pe.burt.android.lib/androidgradientimageview/0.0.2/9b9ae61583bd1c13e7f1897a4fcd5cc8ed9ca9dd/androidgradientimageview-0.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

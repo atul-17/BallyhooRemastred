@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    app:cardElevation="@dimen/_4sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/smoky_white"
+    app:cardCornerRadius="@dimen/_3sdp">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:id="@+id/rl_discount">
+
+                <example.atul.ballyhoohomescreenappchanges.TextAwesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fa_certificate"
+                    android:textColor="@color/red_lighter_shade"
+                    android:textSize="@dimen/_30ssp" />
+
+                <TextView
+                    android:id="@+id/tv_discount_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7ssp"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Single"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:id="@+id/tv_price_caption"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_65sdp"
+                    android:layout_marginTop="2dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:layout_marginRight="@dimen/_25sdp"
+                    android:id="@+id/tv_price_inclusion"
+                    android:text="Bengaluru (also called Bangalore) is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife"
+                    android:textColor="@color/ligher_black"
+                    android:textSize="@dimen/_12ssp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Read more"
+                    android:textStyle="normal"
+                    android:clickable="true"
+                    android:visibility="visible"
+                    android:id="@+id/tv_read_more"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_11ssp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@color/light_grey"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:weightSum="3">
+
+                     <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="fill_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="fill_vertical"
+                            android:layout_marginRight="2dp"
+                            android:gravity="center"
+                            android:text="@string/fa_rupee"
+                            android:id="@+id/ta_price_rupee_icon"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_actual_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="fill_horizontal|center"
+                            android:text="100"
+                            android:textColor="@color/ligher_black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_offered_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
+                            android:id="@+id/ta_awesome_minus_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:visibility="visible"
+                            android:text="@string/fa_minus_circle"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_18ssp" />
+
+                        <TextView
+                            android:layout_width="@dimen/_35sdp"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:visibility="visible"
+                            android:id="@+id/tv_nos_of_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/_12ssp"
+                            />
+
+                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
+                            android:id="@+id/ta_awesome_plus_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:clickable="true"
+                            android:text="@string/fa_plus_circle"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_18ssp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+
+                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_18sdp"
+                            android:layout_gravity="center"
+                            android:text="@string/fa_rupee"
+                            android:gravity="center"
+                            android:layout_marginRight="2dp"
+                            android:id="@+id/ta_subtotal_rupee_icon"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="100"
+                            android:textStyle="bold"
+                            android:id="@+id/tv_subtotal_price"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_350sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/_25sdp"
+    android:layout_marginRight="@dimen/_25sdp"
+  >
+
+    <kr.pe.burt.android.lib.androidgradientimageview.AndroidGradientImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/food_2"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_search_category_pic"
+        app:giv_x="0.0"
+        app:giv_y="0.0"
+        app:giv_rotate="60.0"
+        app:giv_startColor="#26000000"
+        app:giv_startOffset="0.3"
+        app:giv_middleColor="#26000000"
+        app:giv_middleOffset="0.8"
+        app:giv_endColor="#26000000"
+        app:giv_endOffset="0.8"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Fine Dining"
+        android:fontFamily="@font/quicksand_regular"
+        android:textStyle="bold"
+        android:id="@+id/tv_search_category"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_20ssp"
+
+        />
+
+
+
+</android.support.design.card.MaterialCardView>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:elevation="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="55 Wall Street"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ligher_black"
+        android:text="Jp Nagar,Bangalore"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/ligher_black"
+        android:text="Rate Your Experience"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".6"
+        android:layout_height="wrap_content"
+        android:textColor="@color/ligher_black"
+        android:text="Location"
+        android:textSize="@dimen/_14ssp"
+        />
+
+
+        <com.github.channguyen.rsv.RangeSliderView
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:layout_height="@dimen/_30sdp"
+            app:filledColor="@color/blue1_ligher_shade"
+            app:rangeCount="5"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ligher_black"
+                android:text="Food"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+
+            <com.github.channguyen.rsv.RangeSliderView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="@dimen/_30sdp"
+                app:filledColor="@color/blue1_ligher_shade"
+                app:rangeCount="5"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ligher_black"
+                android:text="Ambience"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textSize="@dimen/_14ssp"
+                />
+
+
+            <com.github.channguyen.rsv.RangeSliderView
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="@dimen/_30sdp"
+                app:filledColor="@color/blue1_ligher_shade"
+                app:rangeCount="5"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/ligher_black"
+            android:text="Start Writing Your Review"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/ligher_black"
+            android:gravity="left|top"
+            android:layout_gravity="top"
+            android:textColorHint="@color/ligher_black"
+            android:hint="Food/Beverages: In food we ordered All Time Favorite Chilli Chicken, Pan Fried Chicken Noodles along with Vodkatini and Diet Coke. The food tasted great but the only issue was quantity. The quantity of food was quite less according to the price."
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+    </LinearLayout>
+        <Button
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="bottom|center"
+            android:textSize="@dimen/_14ssp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/roundedbutton"
+            />
+    </android.support.v7.widget.CardView>
+</LinearLayout>

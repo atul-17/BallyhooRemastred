@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.atul.ballyhoohomescreenappchanges">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OfferDetailsActivity" >
+
+
+
+        </activity>
+        <activity android:name=".MerchantOfferListActivity" >
+
+        </activity>
+
+        <activity android:name=".AddReviewActivity"/>
+        <activity android:name=".ActivitiesAndSaloonOfferDetailsActivity" />
+        <activity android:name=".OfferActiviteisDetailsActivity" />
+
+        <activity android:name=".PersonalizedActivity"
+            android:screenOrientation="portrait"
+            >
+
+
+
+        </activity>
+        <activity android:name=".OtherCategoriesOfferListingActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".BallyhooOtherCategoriesEventsListingActivity" />
+        <activity android:name=".BallyhooOtherCategoriesEventDetailsActivity" />
+        <activity android:name=".BallyhooSaloonOffersListing" />
+        <activity android:name=".BallyhooSaloonOffersDetailsActivity" />
+        <activity android:name=".BallyhooSelectCategorySearchActivity" />
+        <activity android:name=".BallyhooSearchActivity" />
+        <activity android:name=".BallyhooShowSearchedMerchantsActivity" />
+    </application>
+
+</manifest>

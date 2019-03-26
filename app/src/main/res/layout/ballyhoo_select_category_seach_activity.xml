@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/labeled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:fontFamily="@font/quicksand_regular"
+        android:gravity="center"
+        android:text="Select the category for your search query "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_search_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labeled"
+        android:layout_marginTop="@dimen/_25sdp" />
+
+    <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+        android:id="@+id/recyclerview_pager_indicator"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_centerHorizontal="true"
+       android:layout_below="@id/recycler_view_search_categories"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:dotColor="@color/light_grey"
+        app:selectedDotColor="@color/green"
+        android:layout_height="@dimen/_1sdp" />
+
+</RelativeLayout>

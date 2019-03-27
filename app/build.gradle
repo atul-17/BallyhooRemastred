@@ -57,4 +57,8 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxjava:2.1.9'
 // RxAndroid
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.github.florent37:android-slidr:1.0.3'
+    implementation 'com.github.DanielMartinus:Stepper-Touch:0.6'
+
+
 }

@@ -162,39 +162,14 @@
                         android:orientation="horizontal">
 
 
-                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
-                            android:id="@+id/ta_awesome_minus_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:clickable="true"
-                            android:visibility="visible"
-                            android:text="@string/fa_minus_circle"
-                            android:textColor="@color/green"
-                            android:textSize="@dimen/_18ssp" />
-
-                        <TextView
-                            android:layout_width="@dimen/_35sdp"
-                            android:layout_height="wrap_content"
-                            android:text="0"
-                            android:visibility="visible"
-                            android:id="@+id/tv_nos_of_items"
-                            android:gravity="center"
-                            android:maxLines="1"
-                            android:layout_gravity="center"
-                            android:textSize="@dimen/_12ssp"
-                            />
-
-                        <example.atul.ballyhoohomescreenappchanges.TextAwesome
-                            android:id="@+id/ta_awesome_plus_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:layout_marginLeft="5dp"
-                            android:clickable="true"
-                            android:text="@string/fa_plus_circle"
-                            android:textColor="@color/green"
-                            android:textSize="@dimen/_18ssp" />
+                        <nl.dionsegijn.steppertouch.StepperTouch
+                            android:id="@+id/stepper_touch"
+                            android:layout_width="@dimen/_80sdp"
+                            app:stepperTextSize="@dimen/_11ssp"
+                            app:stepperTextColor="@color/ligher_black"
+                            app:stepperButtonColor="@color/white"
+                            app:stepperBackgroundColor="@color/green"
+                            android:layout_height="@dimen/_30sdp" />
 
                     </LinearLayout>
                     <LinearLayout

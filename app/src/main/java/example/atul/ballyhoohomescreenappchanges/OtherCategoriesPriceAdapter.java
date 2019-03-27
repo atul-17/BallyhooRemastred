@@ -7,8 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import nl.dionsegijn.steppertouch.OnStepCallback;
+import nl.dionsegijn.steppertouch.Stepper;
+import nl.dionsegijn.steppertouch.StepperTouch;
 
 /**
  * Created by atul on 3/19/19.
@@ -33,7 +39,9 @@ public class OtherCategoriesPriceAdapter extends RecyclerView.Adapter<OtherCateg
 
     @Override
     public void onBindViewHolder(@NonNull OtherCategoriesPriceHolder otherCategoriesPriceHolder, int i) {
-
+        otherCategoriesPriceHolder.stepper_touch.enableSideTap(true);
+        otherCategoriesPriceHolder.stepper_touch.stepper.setMax(10);
+        otherCategoriesPriceHolder.stepper_touch.stepper.setMin(1);
     }
 
     @Override
@@ -42,9 +50,12 @@ public class OtherCategoriesPriceAdapter extends RecyclerView.Adapter<OtherCateg
     }
 
     public static class OtherCategoriesPriceHolder extends RecyclerView.ViewHolder{
+        StepperTouch stepper_touch;
 
         public OtherCategoriesPriceHolder(@NonNull View itemView) {
             super(itemView);
+           stepper_touch =  itemView.findViewById(R.id.stepper_touch);
+
         }
     }
 }
